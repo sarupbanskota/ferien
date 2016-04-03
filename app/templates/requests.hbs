@@ -1,0 +1,18 @@
+<table class="table table-striped">
+  <thead>
+    <th> From </th>
+    <th> To </th>
+    <th> Notes </th>
+  </thead>
+  <tbody>
+    {{#each model as |request|}}
+        <tr>
+          <td> {{request.from}} </td>
+          <td> {{request.to}} </td>
+          <td> {{request.notes}} </td>
+        </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+
