@@ -3,6 +3,7 @@
     <th> From </th>
     <th> To </th>
     <th> Notes </th>
+    <th> Employee </th>
   </thead>
   <tbody>
     {{#each model as |request|}}
@@ -10,6 +11,7 @@
           <td> {{request.from}} </td>
           <td> {{request.to}} </td>
           <td> {{request.notes}} </td>
+          <td> {{request.employee.email}} </td>
         </tr>
     {{/each}}
   </tbody>
