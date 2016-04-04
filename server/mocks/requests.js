@@ -6,20 +6,46 @@ module.exports = function(app) {
   requestsRouter.get('/', function(req, res) {
     res.send({
       'requests': [{
-        'id': 1,
-        'from': '2/11/2015',
-        'to': '4/11/2015',
-        'notes': 'The beach was missing me'
+        id: 1,
+        from: '2/11/2015',
+        to: '4/11/2015',
+        notes: 'The beach was missing me',
+        employee: 3
       },{
-        'id': 2,
-        'from': '2/11/2015',
-        'to': '4/11/2015',
-        'notes': 'The cat ate my work clothes'
+        id: 2,
+        from: '2/11/2015',
+        to: '4/11/2015',
+        notes: 'The cat ate my work clothes',
+        employee: 2
       },{
-        'id': 3,
-        'from': '2/11/2015',
-        'to': '4/11/2015',
-        'notes': 'I want a vacation; what do you mean why?'
+        id: 3,
+        from: '2/11/2015',
+        to: '4/11/2015',
+        notes: 'I want a vacation; what do you mean why?',
+        employee: 4
+      },{
+        id: 4,
+        from: '4/3/2016',
+        to: '8/3/2016',
+        notes: 'This is a test ... still a test .. ',
+        employee: 1
+      }],
+      'employees': [{
+        id: 1,
+        email: 'sarup.banskota@mesitis.com',
+        requests: [4]
+      },{
+        id: 2,
+        email: 'martin.picrodt@mesitis.com',
+        requests: [2]
+      },{
+        id: 3,
+        email: 'takeshi.yoshida@mesitis.com',
+        requests: [1]
+      },{
+        id: 4,
+        email: 'tanmai.sharma@mesitis.com',
+        requests: [3]
       }]
     });
   });
